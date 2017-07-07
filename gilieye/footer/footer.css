@@ -1,0 +1,29 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.footer{
+	min-width: 960px;
+	background: #febf26;
+	height: 160px;
+}
+.footer_content{
+	width: 960px;
+	margin: 0 auto;
+	height: 160px;
+	
+}
+.footer_fontT{
+	text-align: center;
+	font-size: 16px;
+	font-family: "[FZLTXHK]";
+	color: #fff;
+	padding-top: 59px;
+	padding-bottom: 8px;
+}
+.footer_fontB{
+	text-align: center;
+	font-size: 16px;
+	font-family: "[FZLTXHK]";
+	color: #fff;
+}

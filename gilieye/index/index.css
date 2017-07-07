@@ -1,0 +1,140 @@
+.top{
+	min-width: 960px;
+	height: 58px;
+	border-bottom: 1px solid #dfdfdf;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 1;
+	background: #fff;
+}
+.banner{
+	min-width: 960px;
+	height:360px;
+	margin-top: 60px;
+	background: #fafafa;
+}
+.banner_content{
+	width: 960px;
+	margin: 0 auto;
+}
+.banner .item .carousel-inner img{
+	height: 360px;
+}
+.activity{
+	background: #fafafa;
+	padding-top:25px;
+	height:368px;
+	min-width: 960px;
+}
+.activity_content{
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.activity_left{
+	width: 630px;
+	margin-right: 20px;
+	height:368px;
+}
+.activity_leftTitle{
+	padding-left: 10px;
+	width: 620px;
+	margin-bottom: 15px;
+}
+.activity_font{
+	font-size: 24px;
+	font-family: '[FZLTXHK]';
+	padding-left: 9px;
+	height: 42px;
+	line-height: 42px;
+}
+.activity_leftTitle p{
+	height: 42px;
+	width: 56px;
+	background: url(../images/firstSprite.png) no-repeat -16px 0;
+	margin:0;
+}
+.arrow{
+	margin-top: 7px;
+	margin-left: 2px;
+	width: 10px;
+	height: 8px;
+	background: url(../images/firstSprite.png) no-repeat -146px -90px;
+}
+.more{
+	width: 74px;
+	height: 22px;
+	border: 1px solid #eeeeee;
+	border-radius: 20px;
+	line-height: 20px;
+	background: #FFF;
+	margin-top: 20px;
+}
+.more a{
+	font-size:12px ;
+	color: #666;
+	text-decoration: none;
+	cursor: pointer;
+	text-indent: 8px;
+}
+.activity_leftContent{
+	height: 270px;
+	margin-top: 14px;
+}
+.activity_leftContent dl{
+	float: left;
+	width: 150px;
+	height: 268px;
+	border:1px solid #eeeeee;
+	border-radius: 10px;
+	margin-right: 8px;
+}
+.activity_leftContent dl:last-child{
+	margin: 0;
+}
+.activity_leftContent img{
+	width: 148px;
+	height: 230px;
+}
+.activity_leftContent dd{
+	text-indent: 12px;
+	line-height: 38px;
+}
+.activity_right{
+	width: 310px;
+	height:368px;
+}
+.activity_rightTitle{
+	height: 57px;
+}
+.activity_painter{
+	font-size: 18px;
+	font-family: "[FZLTXHK]";
+	margin:0 ;
+	margin-top: 20px;
+}
+
+.activity_painter_change{
+	height: 22px;
+	width: 68px;
+	border: 1px solid #eeeeee;
+	border-radius: 20px;
+	
+	margin-top: 24px;
+}
+.activity_painter_change span{
+	font: 12px/20px '[FZLTXHK]';
+	margin-left: 10px;
+	color: #;
+	
+}
+.activity_painter_change div{
+	width: 12px;
+	height: 11px;
+	background: url(../images/firstSprite.png) no-repeat -144px -137px;
+	margin:6px 5px 0 0;
+	color: #666;
+}

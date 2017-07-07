@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/reset.css" />	
+		<link rel="stylesheet" type="text/css" href="login_register.css"/>
+		<script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="../js/jquery.js" ></script>
+		<script type="text/javascript" src="../js/cookie.js"></script>
+		<script type="text/javascript" src="login_register.js"></script>
+	</head>
+	<body>
+		<div class="login_register">
+			<div class="login_register_tiltle">
+				<div class="login_title lR_title color">登陆</div>
+				<div class="register_title lR_title">注册</div>
+				<div class="bottom_line"></div>
+			</div>
+			<div class="login_content  login_content_box">
+				<div class=" phone_number">
+					<div class="fl">+86</div>
+					<input type="text" name="" id="" value="" placeholder="输入手机号" class="fl"/>
+				</div>
+				<div class="pwd">
+					<input type="password" name="" id="" value="" placeholder="输入密码" />
+				</div>
+				<div class="login">登陆</div>
+				<div class="messsage">
+					<div class="fl free_login"><input type="checkbox"  />十天免登陆</div>
+					<div class="fr forget_pwd">  <a id="forget_pwd">忘记密码?</a> </div>
+				</div>
+				<div class="other_login_method">
+					<div>第三方登录</div>
+					<div>
+						<dl>
+							<dt></dt>
+							<dd>微博</dd>
+						</dl>
+						<dl>
+							<dt></dt>
+							<dd>QQ</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="register_content dis login_content_box">
+				<div class="register_phone"><span>手机账号注册</span><b>当前仅支持大陆地区的手机号</b> <i>已有账号?</i><a id="go_login">去登陆</a></div>
+				<div class="register_phone_number">
+					<div class="fl rigister_com">手机号码</div>
+					<div class="fl ">
+						<span>+86</span>
+						<input type="text"  placeholder="输入11位大陆手机号" class="register_number"/>
+					</div>
+				</div>
+				<div class="register_imgCode">
+					<div class="fl rigister_com">验证码</div>
+					<input type="text" class="fl fillIn_imgCode" placeholder="输入验证码" />
+					<img src="" alt="图形验证码"/>
+				</div>
+				<div class="register_checkout">
+					<div class="fl rigister_com">短信验证码</div>
+					<input type="text" class="fl fillIn_code" placeholder="输入验证码" />
+					<div class="fl get_code">获取验证码</div>
+				</div>
+				<div class="register_pwd"> 
+					<div class="fl rigister_com">密码</div>
+					<input type="text"  placeholder="设置6-16位的密码" />
+				</div>
+				<div class="register_next">下一步</div>
+				<div class=" register_protocols">
+					<input type="checkbox"  checked/>
+					<span>我已同意  《Gilieeye用户使用协议》</span>
+				</div>
+				<div class="register_tips">
+					<img src="../images/tip.png" class="fl"/>
+					<p class="fl">请先同意协议</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

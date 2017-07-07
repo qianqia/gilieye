@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../cropper/cropper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../sitelogo/sitelogo.css"/>
+		<link rel="stylesheet" type="text/css" href="setting.css"/>
+		<script type="text/javascript" src="../cropper/cropper.min.js"></script>
+		<script type="text/javascript" src="../sitelogo/sitelogo.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap-datepicker.js"></script>
+		<script type="text/javascript" src="setting.js"></script>
+	</head>
+	<body>
+		<div class="setting">
+			<div class="setting_title">
+				<p class="fl">修改设置</p>
+				<div class="setting_information fl font_color">基本信息</div>
+				<div class="setting_img fl">修改头像</div>
+				<div class="setting_reset_pwd fl">修改密码</div>
+				<div class="setting_pay fl">支付信息</div>
+				<div class="setting_inform fl">站内通知</div>
+				<span class="fl setting_line"></span>
+			</div>
+			<div class="setting_content">
+				<!--基本信息-->
+				<div class="information_content setting_dis setting_content_con">
+					<div class="information_user">
+						<div class="fl information_left">昵称</div>
+						<input type="text" />
+					</div>
+					<div class="information_sex">
+						<div class="fl information_left">性别</div>
+						<div class="fl"><input type="radio" name="sex" " value="男" />  <span> 男 </span></div>
+						<div class="fl"><input type="radio" name="sex" " value="女" /> <span>女 </span></div>
+					</div>
+					<div class="information_day">
+						<div class="fl information_left">生日</div>
+						<input type="text" class="datepicker" placeholder="请选择日期" />
+					</div>
+					<div class="information_phone"> 
+						<div class="fl information_left">手机号</div>
+						<input type="text"/>
+					</div>
+					<div class="information_email">
+						<div class="fl information_left">邮箱</div>
+						<input type="text"/>
+					</div>
+					<div class="information_address">
+						<div class="fl information_left">地址</div>
+						<div class="information_address_right fl">
+							<div class="address_detail">
+								<p class="address_user">
+									<span></span>
+									<span></span>
+								</p>
+								<p class="address_content"></p>
+							</div>
+							<div class="information_address_right_user">
+								<span >收货人姓名</span><input type="text" class="address_username" /><span >收货人电话</span><input type="text"  class="address_tel"/>
+							</div>
+							<div class="information_address_right_area ">
+								<span class="information_address_right_con fl">所在地区</span><input type="text"  class="fl">
+							</div>
+							<div class="information_address_right_detailArea">
+								<span class="information_address_right_con fl">详细地址</span><input type="text" class="fl" >
+							</div>
+						</div>
+					</div>
+					<div class="information_org"> 
+						<div class="fl information_left fl">个性域名</div>
+						<div class="fl">
+							<span>http://gilieye.com/u/</span><input type="text" />
+							<!--<span>(数字或小写字母组成)</span>-->
+						</div>
+					</div>
+					<div class="information_sign">
+						<div class="fl information_left">签名</div>
+						<div class="fl information_sign_right">
+							<textarea placeholder="用一句好描写一下自己吧"></textarea>
+							<div>
+								<div class="setting_cancel fl">取消</div>
+								<div class="setting_save fr">保存</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--修改头像-->
+				<div class="img_content setting_content_con">
+					<div class="img_content_title">仅支持JPG、GIF、PNG格式图片，文件少于5M</div>
+					
+				<!--插件-->
+					<div class="modal fade" id="avatar-modal" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1" style="outline: none;">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<form class="avatar-form"  enctype="multipart/form-data"  style="overflow: hidden;" action="" method="post">
+									<div class="modal-body">
+										<div class="avatar-body">
+											<div class="avatar-upload upload_img">
+												<span>上传原图片，生成高清图片</span>
+												<input class="avatar-input" id="avatarInput" name="avatar_file" type="file">
+											</div>
+											<div >
+												<div class="avatar-wrapper fl"></div>
+												<div class="fl small_img">
+													<div class="small_img_font">您上传的图片将会自动生成三种尺寸的头像，请注意中小尺寸的头像是否清晰。</div>
+													<div class="small_img_three">
+														<div class="small_img_three_left fl">
+															<div class="avatar-preview  small_150"></div>
+															<p>150X150</p>
+														</div>
+														<div class="fl small_img_three_right">
+															<div class="small_70">
+																<div class="avatar-preview "></div>
+																<div>70X70</div>
+															</div>
+															<div class="small_30">
+																<div class="avatar-preview "></div>
+																<div>30X30</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</form>
+					  		<div class="img_form_btn">
+								<button class="img_cel" >取消</button>
+								<button class="img_save" >保存</button>
+							</div>
+					  	</div>
+					  </div>
+					</div>
+					<div class="loading" aria-label="Loading" role="img" tabindex="-1"></div>
+				</div>
+				<!--修改密码-->
+				<div class="pwd_content setting_content_con">
+					<div class="setting_pwd_left fl">
+						<div>旧密码</div>
+						<div>新密码</div>
+						<div>确认密码</div>
+					</div>
+					<div class="setting_pwd_right fl">
+						<input type="text"  />
+						<input type="text" />
+						<input type="text" />
+						<div class="setting_pwd_right_bottom">
+							<div class="fl">取消</div>
+							<div class="fr">保存</div>
+						</div>
+					</div>
+					
+				</div>
+				<!--支付信息-->
+				<div class="pay_content setting_content_con">
+					这个是支付设置暂未开放
+				</div>
+				<!--站内通知-->
+				<div class="inform_content setting_content_con">
+					<p>勾选后就爱你工会收到对应的站内通知</p>
+					<div class="inform_content_detail">
+						<div class="fl">一棵树</div>
+						<div class="fl"><input type="checkbox" /><span>被评论</span></div>
+						<div class="fl"><input type="checkbox" /><span>被喜欢</span></div>
+						<div class="fl"><input type="checkbox" /><span>被@</span></div>
+						<div class="fl"><input type="checkbox" /><span>被关注</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

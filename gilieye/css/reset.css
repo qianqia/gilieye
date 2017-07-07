@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*=========================Reset_start==========================*/
+body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{ box-sizing: border-box;font-family: '[FZLTXHK]';}
+body{background: #ccc;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em,i,b{font-weight: normal; font-style: normal;}
+a{text-decoration: none;}
+.fl{float: left;}
+li{list-style: none;}
+.fr{float: right;}
+input{border: none;background: none;}
+/*a:link,a:visited,a:hover,a:active{text-decoration:none;} */
+/*==========================Reset_End===========================*/
